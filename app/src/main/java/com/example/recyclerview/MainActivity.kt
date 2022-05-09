@@ -15,11 +15,16 @@ class MainActivity : AppCompatActivity() {
         rvContact.layoutManager = LinearLayoutManager(this)
     }
 
-    private fun createData() : List<Contact>{
-        val list = mutableListOf<Contact>()
+    private fun createData() : List<Any>{
+        val list = mutableListOf<Any>()
         for (i in 0..150){
             val rand = (22..70).random()
-            list.add(Contact("My name is $rand", rand))
+            if (i % 4 == 0){
+                list.add(Advertisment("No ad available"))
+            }
+            else {
+                list.add(Contact("My name is $rand", rand))
+            }
         }
         return list
     }

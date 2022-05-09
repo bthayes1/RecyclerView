@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="0.30"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:contentDescription="@string/contact_photo" />
 
     <TextView
         android:id="@+id/tvName"
@@ -25,6 +26,7 @@
         app:layout_constraintBottom_toBottomOf="@id/ivContact"
         app:layout_constraintStart_toEndOf="@id/ivContact"
         android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         tools:text="My name is 5" />
 
     <TextView
